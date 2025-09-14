@@ -44,13 +44,13 @@
         {
             double perimeter = 0;
 
-            for (int i = 0; i < points.Length - 1; i++)
+            for (int i = 0; i < points.Length; i++)
             {
                 Point thisPoint = points[i];
-                Point nextPoint = points[i + 1];
-
+                Point nextPoint = points[(i + 1) % points.Length];
                 perimeter += LengthSide(thisPoint, nextPoint);
             }
+
             return perimeter;
         }
     }
