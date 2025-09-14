@@ -61,7 +61,7 @@ namespace LabWork1
 
         static void Task3()
         {
-            Console.WriteLine("\nTask3\n");
+            Console.WriteLine("\nTask3");
 
             // Another way to solve the task3
             /*
@@ -92,8 +92,8 @@ namespace LabWork1
 
             Point quadPoint1 = new Point(0, 0);
             Point quadPoint2 = new Point(5, 0);
-            Point quadPoint3 = new Point(3, 7);
-            Point quadPoint4 = new Point(8, 8);
+            Point quadPoint3 = new Point(5, 5);
+            Point quadPoint4 = new Point(0, 5);
 
             Figure quadrilateral = new Figure(quadPoint1, quadPoint2, quadPoint3, quadPoint4);
 
@@ -107,15 +107,15 @@ namespace LabWork1
 
             Console.WriteLine("\n=== Triangle ===");
             Console.WriteLine($"Figure: {triangle.Name}");
-            Console.WriteLine($"Perimeter: {triangle.PerimeterCalculator}");
+            Console.WriteLine($"Perimeter: {triangle.PerimeterCalculator()}");
 
             Console.WriteLine("\n=== Quadrilateral ===");
             Console.WriteLine($"Figure: {quadrilateral.Name}");
-            Console.WriteLine($"Perimeter: {quadrilateral.PerimeterCalculator}");
+            Console.WriteLine($"Perimeter: {quadrilateral.PerimeterCalculator()}");
 
             Console.WriteLine("\n=== Pentagon ===");
             Console.WriteLine($"Figure: {pentagon.Name}");
-            Console.WriteLine($"Perimeter: {pentagon.PerimeterCalculator}");
+            Console.WriteLine($"Perimeter: {pentagon.PerimeterCalculator()}");
         }
 
         static double getDouble()

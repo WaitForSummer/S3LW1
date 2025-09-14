@@ -44,7 +44,7 @@
         {
             double perimeter = 0;
 
-            for (int i = 0; i < points.Length; i++)
+            for (int i = 0; i < points.Length - 1; i++)
             {
                 Point thisPoint = points[i];
                 Point nextPoint = points[i + 1];
