@@ -34,7 +34,7 @@ namespace LabWork1
             Console.WriteLine("\nPress any key to continue to Task 2...");
             Console.ReadKey();
             Console.Clear();
-        }
+        } 
 
         static void Task2()
         {
